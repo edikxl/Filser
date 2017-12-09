@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/films.css">
+  </head>
+  <body>
+    <div id="page">
+      <div class="side-btn btn-with-img-inside" id="back-button"><img src="resources/icons/system/arrows.png"></div>
+      <div id="main">
+        <div id="info">
+          <div id="info-text-field"></div>
+        </div>
+        <div class="pagination">
+          <div class="pagination-films-on-page">
+            <input type="text" maxlength="3" title="Введите какое максимальное количество фильмов на странице вы хотите видеть и нажмите Enter">
+          </div>
+          <div class="pagination-nav"></div>
+          <div class="pagination-goto">
+            <input type="text" maxlength="3" title="Введите номер страницы на какую хотите перейти и нажмите Enter">
+          </div>
+        </div>
+        <div id="films"></div>
+      </div>
+      <div class="side-btn btn-with-img-inside"><img src="resources/icons/system/arrows.png"></div>
+    </div>
+    <div class="pagination" id="fixed-pagination">
+      <div class="pagination-films-on-page" id="fixed-pagination-films-on-page">
+        <input type="text" maxlength="3" title="Введите какое максимальное количество фильмов на странице вы хотите видеть и нажмите Enter">
+      </div>
+      <div class="pagination-nav" id="fixed-pagination-nav"></div>
+      <div class="pagination-goto" id="fixed-pagination-goto">
+        <input type="text" maxlength="3" title="Введите номер страницы на какую хотите перейти и нажмите Enter">
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/films/pageManager.js"></script>
+    <script src="scripts/films/appManager.js"></script>
+    <script src="scripts/films/films.js"></script>
+  </body>
+</html>

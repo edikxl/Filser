@@ -1,0 +1,53 @@
+/* Colors */
+
+html{
+
+  width: 100%;
+  height: 100%;
+
+  --colorLightA : #96ED89;
+  --colorLightB : #45BF55;
+  --colorLightC : #1b9644;
+  --colorLightD : #086036;
+  --colorMiddle : #167F39;
+  --colorDarkA : #044C29;
+  --colorDarkB : #00261C;
+  --colorDarkC : #022b20;
+
+  color: var(--colorLightA);
+  font-family: "resources/web/fonts/Ubuntu-Bold.ttf", sans-serif;
+
+  background-color: var(--colorDarkB);
+
+}
+
+/* Body */
+
+body{
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0px;
+  padding: 0px;
+
+}
+
+/* Special */
+
+/* - Button with image inside */
+
+.btn-with-img-inside{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.btn-with-img-inside img{
+
+  max-width: 80%;
+  max-height: 80%;
+
+}

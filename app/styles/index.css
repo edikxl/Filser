@@ -1,0 +1,231 @@
+/* - Page */
+
+#page{
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+}
+
+/* -- Header */
+
+#header{
+
+  display: flex;
+
+  width: 100%;
+  height: 6%;
+
+  background-color: var( --colorMiddle );
+
+}
+
+/* --- Header button */
+
+.header-btn{
+
+  width: 5%;
+  height: 100%;
+
+}
+
+.header-btn:hover{
+  background-color: var( --colorLightA );
+}
+
+.header-btn:active{
+  background-color: var( --colorDarkA );
+}
+
+#menu-btn:active,
+#others-btn:active{
+
+  background-color: var( --colorLightA );
+
+}
+
+/* --- Searcher */
+
+#searcher{
+
+  -webkit-app-region: drag;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70%;
+  height: 100%;
+
+}
+
+/* ---- Searcher field */
+
+#searcher-field{
+
+  -webkit-app-region: no-drag;
+
+  padding: 0px 1%;
+
+  width: 50%;
+  height: 80%;
+
+  font-size: 130%;
+
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  color: var( --colorLightA );
+  outline: none;
+  background-color: var( --colorDarkA );
+
+}
+
+#searcher-field::selection{
+
+  background-color: var( --colorLightA );
+
+}
+
+/* ---- Searcher button */
+
+#searcher-btn{
+
+  -webkit-app-region: no-drag;
+
+  width: 3%;
+  height: 80%;
+
+  border-radius: 0 10px 10px 0;
+  background-color: var( --colorLightB );
+
+}
+
+#searcher-btn:hover{
+
+  background-color: var( --colorLightA );
+
+}
+
+#searcher-btn:active{
+
+  background-color: var( --colorDarkA );
+
+}
+
+/* -- Iframe */
+
+#iframe{
+
+  width: 100%;
+  height: 94%;
+
+  border: none;
+
+}
+
+/* - Menu of genres */
+
+#menu-of-genres{
+
+  position: absolute;
+  top: 6%;
+  left: 0;
+
+  display: none;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  width: 20%;
+  height: 39%; /* 40% - 1% 'cause weird rounding of buttons */
+
+  background-color: var(--colorLightC);
+
+}
+
+/* -- Menu of genres item */
+
+.menu-of-genres-item{
+
+  width: 25%;
+  height: 20%;
+
+}
+
+.menu-of-genres-item:after{
+
+  position: absolute;
+  left: 100%;
+
+  display: none;
+  content: attr( genreRus );
+
+  padding: 0px 1%;
+
+  max-width: 100%;
+  height: 20%;
+
+  text-align: center;
+  font-size: 130%;
+  letter-spacing: 1px;
+  line-height: 250%;
+
+  border-radius: 0 10px 10px 0;
+  background-color: var( --colorDarkA );
+
+}
+
+.menu-of-genres-item:hover:after{
+
+  display: block;
+
+}
+
+.menu-of-genres-item:hover{
+
+  background-color: var( --colorLightA );
+
+}
+
+.menu-of-genres-item:active{
+
+  background-color: var( --colorDarkA );
+
+}
+
+/* - Menu of things */
+
+#menu-of-things{
+
+  position: absolute;
+  top: 6%;
+  left: 10%;
+
+  display: none; /* Flex */
+  flex-direction: column;
+
+  width: 5%;
+  height: 12%; /* Two buttons = 6% * 2 = 12% */
+
+}
+
+/* - Menu of genres button */
+
+.menu-of-things-btn{
+
+  width: 100%;
+  height: 50%;
+
+  background-color: var(--colorLightC);
+
+}
+
+.menu-of-things-btn:hover{
+  background-color: var( --colorLightA );
+}
+
+.menu-of-things-btn:active{
+  background-color: var( --colorDarkA );
+}

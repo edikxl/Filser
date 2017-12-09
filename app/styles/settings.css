@@ -1,0 +1,148 @@
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+  width: 1%;
+  height: 100%;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+  background-color: var(--colorLightA);
+
+}
+
+/* Body */
+
+body{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* - Title */
+
+#title{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1% 0;
+  padding: 1% 2%;
+
+  min-height: 5%;
+
+  font-size: 200%;
+  letter-spacing: 5px;
+
+  border-radius: 10px;
+  background-color: var( --colorMiddle );
+
+}
+
+
+/* - Main */
+
+#main{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+}
+
+/* -- Block */
+
+.main-block{
+
+  margin: 1% 0;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+
+}
+
+/* --- Title */
+
+.main-title{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main-title div{
+
+  padding: 0.5% 4%;
+
+  min-height: 5%;
+
+  font-size: 200%;
+  text-align: center;
+
+  border-radius: 10px;
+  background-color: var( --colorMiddle );    
+
+}
+
+/* --- Line */
+
+.main-line{
+
+  margin: 4% 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+}
+
+/* ---- Name */
+
+.main-line-name{
+
+  padding: 1%;
+
+  height: 100%;
+
+  font-size: 120%;
+
+  border-radius: 10px;
+  background-color: var( --colorMiddle );
+
+}
+
+/* ---- Text field */
+
+.main-line-text-field{
+
+  padding: 1%;
+
+  width: 3%;
+  height: 100%;
+
+  font-size: 120%;
+  color: var( --colorLightA );
+
+  border: 0;
+  border-radius: 10px;
+  outline: none;  
+  background-color: var( --colorMiddle );
+
+}
+
+.main-line-text-field::selection{
+
+  background-color: var( --colorLightA );
+
+}

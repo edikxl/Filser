@@ -1,0 +1,493 @@
+/* Strange fix */
+
+html{
+
+  overflow-x: hidden;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+  width: 1%;
+  height: 100%;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+  background-color: var(--colorLightA);
+
+}
+
+/* Page */
+
+#page{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 100%;
+
+}
+
+/* - Main */
+
+#main{
+
+  width: 90%;
+
+  cursor: default;
+
+}
+
+/* -- Header */
+
+#header{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 100%;
+
+}
+
+/* --- Title */
+
+#title{
+
+  display: flex;
+
+  margin: 1% 0;
+
+  width: 100%;
+  height: 15%;
+
+  background-color: var( --colorDarkA );
+
+}
+
+/* |-- Names of film */
+
+#title-names{
+
+  padding: 1%;
+
+  width: 70%;
+
+}
+
+/* ||- Russian name of film */
+
+#title-rus-name{
+
+  font-size: 200%;
+
+}
+
+/* ||- English name of film */
+
+#title-eng-name{
+
+  font-size: 150%;
+
+}
+
+/* |-- Watch later button */
+
+#title-watch-later-btn{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30%;
+
+  font-size: 170%;
+
+  background-color: var( --colorMiddle );
+
+}
+
+#title-watch-later-btn:hover{
+
+  background-color: var( --colorLightB );
+
+}
+
+#title-watch-later-btn:active{
+
+  background-color: var( --colorDarkC );
+
+}
+
+/* --- Player */
+
+#player{
+
+  margin-bottom: 1%;
+
+  width: 100%;
+  height: 80vh;
+
+  background-color: var( --colorDarkA );
+
+}
+
+/* -- Middle */
+
+#middle{
+
+  margin-bottom: 1%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+}
+
+/* --- Downloader */
+
+#downloader{
+
+  width: 50%;
+  height: 100%;
+
+}
+
+/* |-- Torrent */
+
+.torrent{
+
+  margin: 1% 0;
+
+  display: flex;
+
+  width: 100%;
+  height: 11vh;
+
+  background-color: var( --colorDarkA );
+
+}
+
+/* ||- Torrent body */
+
+.torrent-body{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%;
+  height: 100%;
+
+}
+
+/* ||| Torrent name */
+
+.torrent-name{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  height: 100%;
+
+  font-size: 110%;
+  text-align: center;
+
+}
+
+.torrent-name:hover{
+
+  background-color: var( --colorLightB );
+
+}
+
+.torrent-name:active{
+
+  background-color: var( --colorDarkC );
+  
+}
+
+/* ||| Torrent size */
+
+.torrent-size{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20%;
+  height: 100%;
+
+  font-size: 130%;
+
+  background-color: var( --colorMiddle );
+
+}
+
+/* ||| Torrent info */
+
+.torrent-info{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  height: 100%;
+
+  font-size: 70%;
+
+}
+
+.torrent-info:hover{
+
+  background-color: var( --colorLightB );
+
+}
+
+.torrent-info:active{
+
+  background-color: var( --colorDarkC );
+  
+}
+
+/* |||- Torrent translation, video, audio */
+
+.torrent-translation,
+.torrent-video,
+.torrent-audio{
+
+  padding-left: 1%;
+
+  width: 100%;
+
+}
+
+/* ||| Torrent progress bar */
+
+.torrent-progress-bar{
+
+  width: 80%;
+  height: 100%;
+
+}
+
+/* |||- Torrent progress bar rectangle */
+
+.torrent-progress-bar-rectangle{
+
+  height: 100%;
+
+  background-color: var( --colorLightC );
+
+}
+
+/* ||- Torrent controller */
+
+.torrent-controller{
+
+  width: 10%;
+  height: 100%;
+
+}
+
+/* ||| Torrent others button  */
+
+.torrent-others-btn{
+
+  width: 100%;
+  height: 100%;
+
+}
+
+.torrent-others-btn:hover{
+
+  background-color: var( --colorLightB );
+
+}
+
+/* ||| Torrent menu */
+
+.torrent-menu{
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 200%;
+
+}
+
+/* |||- Torrent btn */
+
+.torrent-menu-btn{
+
+  z-index: 1;
+
+  width: 100%;
+  height: 33.3333333%;
+
+  background-color: var( --colorLightC );
+
+}
+
+.torrent-menu-btn:hover{
+
+  background-color: var( --colorLightB );
+
+}
+
+.torrent-menu-btn:active{
+
+  background-color: var( --colorMiddle );
+
+}
+
+/* --- Middle info */
+
+#middle-info{
+
+  width: 45%;
+  height: 100%;
+
+}
+
+/* |-- Ratings */
+
+#middle-info-ratings{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  height: 50%;
+
+}
+
+/* ||- Rating */
+
+.rating{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2%;
+
+  height: 100%;
+  width: 33.3%;
+
+  background-color: var( --colorDarkA );
+
+}
+
+#rating-2{
+
+  background-color: var( --colorMiddle );
+
+}
+
+.rating-name{
+
+  font-size: 140%;
+  letter-spacing: 1px;
+
+}
+
+.rating-value{
+
+  font: bold;
+  font-size: 130%;
+  letter-spacing: 1px;
+
+}
+
+/* |-- Images */
+
+#middle-info-imgs{
+
+  display: flex;
+
+  width: 100%;
+  height: 50%;
+
+}
+
+#middle-info-imgs img{
+
+  width: 33.3%;
+
+}
+
+/* -- Footer */
+
+#footer{
+
+  margin-bottom: 1%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+}
+
+/* --- Footer info */
+
+#footer-info{
+
+  display: flex;
+  flex-direction: column;
+
+  padding: .5% 1%;
+
+  width: 40%;
+  height: 100%;
+
+  background-color: var( --colorDarkA );
+
+}
+
+.footer-info-name{
+
+  padding: 1% 0;
+
+  align-self: center;
+
+  font-size: 170%;
+
+}
+
+.footer-info-line{
+
+  padding-top: .2%;
+
+}
+
+/* --- Plot */
+
+#plot{
+
+  padding: .5% 1%;
+
+  width: 55%;
+  height: 100%;
+
+  background-color: var( --colorDarkA );
+
+}

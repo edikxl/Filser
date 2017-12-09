@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+    <div id="page">
+      <div id="header">
+        <div class="header-btn btn-with-img-inside" id="menu-btn" onmouseover="show( 'menu-of-genres' )" onmouseout="hide( 'menu-of-genres' )"><img src="resources/icons/system/menu.png"></div>
+        <div class="header-btn btn-with-img-inside"><img src="resources/icons/system/settings.png"></div>
+        <div class="header-btn btn-with-img-inside" id="others-btn" onmouseover="show( 'menu-of-things' )" onmouseout="hide( 'menu-of-things' )"><img src="resources/icons/system/others.png"></div>
+        <div id="searcher">
+          <input id="searcher-field" type="text">
+          <div id="searcher-btn" class="btn-with-img-inside"><img src="resources/icons/system/search.png"></div>
+        </div>
+        <div class="header-btn btn-with-img-inside" id="minimize-btn"><img src="resources/icons/system/minimize.png"></div>
+        <div class="header-btn btn-with-img-inside" id="maximize-btn"><img src="resources/icons/system/maximize.png"></div>
+        <div class="header-btn btn-with-img-inside" id="close-btn"><img src="resources/icons/system/close.png"></div>
+      </div>
+      <iframe id="iframe" src=""></iframe>
+    </div>
+    <div id="menu-of-genres" onmouseover="show( 'menu-of-genres' )" onmouseout="hide( 'menu-of-genres' )"></div>
+    <div id="menu-of-things" onmouseover="show( 'menu-of-things' )" onmouseout="hide( 'menu-of-things' )">
+      <div class="menu-of-things-btn btn-with-img-inside"><img src="resources/icons/system/watch-later.png"></div>
+      <div class="menu-of-things-btn btn-with-img-inside"><img src="resources/icons/system/downloads.png"></div>
+    </div>
+    <!-- Scripts -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/index/pageManager.js"></script>
+    <script src="scripts/index/appManager.js"></script>
+    <script src="scripts/index/index.js"></script>
+    <script>if (window.module) module = window.module;</script>
+  </body>
+</html>

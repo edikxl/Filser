@@ -1,0 +1,246 @@
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+  width: 1%;
+  height: 100%;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+  background-color: var(--colorLightA);
+
+}
+
+/* Body */
+
+body{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* - Title */
+
+#title{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1% 0;
+  padding: 1% 2%;
+
+  min-height: 5%;
+
+  font-size: 200%;
+  letter-spacing: 5px;
+
+  border-radius: 10px;
+  background-color: var( --colorMiddle );
+
+}
+
+
+/* - Main */
+
+#main{
+
+  width: 100%;
+
+}
+
+/* -- Torrent */
+
+.torrent{
+
+  margin: 0 0 1% 20%;
+
+  display: flex;
+
+  width: 60%;
+  height: 11vh;
+
+  background-color: var( --colorDarkA );
+
+}
+/* ||- Torrent body */
+
+.torrent-body{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%;
+  height: 100%;
+
+}
+
+/* ||| Torrent name */
+
+.torrent-name{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  height: 100%;
+
+  font-size: 110%;
+  text-align: center;
+
+}
+
+.torrent-name:hover{
+
+  background-color: var( --colorLightB );
+
+}
+
+.torrent-name:active{
+
+  background-color: var( --colorDarkC );
+  
+}
+
+/* ||| Torrent size */
+
+.torrent-size{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20%;
+  height: 100%;
+
+  font-size: 130%;
+
+  background-color: var( --colorMiddle );
+
+}
+
+/* ||| Torrent info */
+
+.torrent-info{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  height: 100%;
+
+  font-size: 70%;
+
+}
+
+.torrent-info:hover{
+
+  background-color: var( --colorLightB );
+
+}
+
+.torrent-info:active{
+
+  background-color: var( --colorDarkC );
+  
+}
+
+/* |||- Torrent translation, video, audio */
+
+.torrent-translation,
+.torrent-video,
+.torrent-audio{
+
+  padding-left: 1%;
+
+  width: 100%;
+
+}
+
+/* ||| Torrent progress bar */
+
+.torrent-progress-bar{
+
+  width: 80%;
+  height: 100%;
+
+}
+
+/* |||- Torrent progress bar rectangle */
+
+.torrent-progress-bar-rectangle{
+
+  height: 100%;
+
+  background-color: var( --colorLightC );
+
+}
+
+/* ||- Torrent controller */
+
+.torrent-controller{
+
+  width: 10%;
+  height: 100%;
+
+}
+
+/* ||| Torrent others button  */
+
+.torrent-others-btn{
+
+  width: 100%;
+  height: 100%;
+
+}
+
+.torrent-others-btn:hover{
+
+  background-color: var( --colorLightB );
+
+}
+
+/* ||| Torrent menu */
+
+.torrent-menu{
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 200%;
+
+}
+
+/* |||- Torrent btn */
+
+.torrent-menu-btn{
+
+  z-index: 1;
+
+  width: 100%;
+  height: 33.3333333%;
+
+  background-color: var( --colorLightC );
+
+}
+
+.torrent-menu-btn:hover{
+
+  background-color: var( --colorLightB );
+
+}
+
+.torrent-menu-btn:active{
+
+  background-color: var( --colorMiddle );
+
+}
